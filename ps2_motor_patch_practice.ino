@@ -1,7 +1,7 @@
 #include "ps2_to_2_wheel_car.h"
 
-#define dataPort 8                     //port 1: data
-#define commandPort 9                  //port 2: command
+#define dataPort 8                      //port 1: data
+#define commandPort 9                   //port 2: command
                                         //port 3: shock motor power
 
 //goundPort GND                         //port 4: ground
@@ -20,14 +20,14 @@ ps2_to_motor car;
 
 void setup()
 {
-  Serial.begin(9600);
+  	Serial.begin(9600);
     Serial.println();
     Serial.println("start");
-  car.init_ps2(dataPort, commandPort, attPort, clockPort, supportAnalogJoystick, supportVibration);
+  	car.init_ps2(dataPort, commandPort, attPort, clockPort, supportAnalogJoystick, supportVibration);
 }
 
 void loop()
 {
-  car.ps2_to_monitor();
-  delay(500);
+  	car.ps2_to_monitor();
+  	delay(500);
 }

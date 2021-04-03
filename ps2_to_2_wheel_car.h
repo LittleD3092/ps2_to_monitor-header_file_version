@@ -8,6 +8,6 @@ public:
 	void ps2_to_monitor();
 	
 private:
-	void ps2Input(*bool, *bool, *bool, *bool);
+	void ps2Input(bool*, bool*, bool*, bool*);
 	PS2X ps2x;
 };
